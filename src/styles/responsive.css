@@ -1,0 +1,88 @@
+@import url("config.css");
+@media screen and (min-width: 576px) {
+  /* nav */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-toggle .nav-menu {
+    display: none;
+  }
+  nav .nav-list {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: transparent;
+  }
+  nav .nav-item {
+    padding: 0 1.8rem 0 0;
+    display: inline-block;
+  }
+  nav .nav-item a {
+    color: var(--dark-color);
+  }
+
+  nav .nav-item a:hover {
+    color: var(--primary-color);
+  }
+  nav .nav-item:hover {
+    background-color: transparent;
+  }
+
+  /* Main  */
+
+  /* Post */
+  .post-item .post_title {
+    font-size: 1.4rem;
+  }
+
+  .post-item .post_description {
+    font-size: 0.9rem;
+  }
+  /* Detail Item */
+  .container-restaurant .img-restaurant {
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+  }
+  .information-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-restaurant {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    max-width: 1200px;
+  }
+  nav .nav-item {
+    padding: 0 1.8rem 0 1rem;
+  }
+  .container-restaurant {
+    max-width: 1200px;
+    display: grid;
+    padding: 3em 0;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+  }
+  .container-restaurant .information {
+    padding: 2rem calc(0.4vw + 1.2rem);
+  }
+  .container-restaurant .container-image-restaurant {
+    padding: 1.5em 0;
+    align-self: start;
+  }
+  .container-restaurant .review-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
