@@ -70,6 +70,7 @@
     max-width: 1200px;
     display: grid;
     padding: 3em 0;
+    margin: 4.5rem auto;
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
   }

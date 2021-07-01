@@ -5,6 +5,7 @@ const CacheHelper = {
     const cache = await this._openCache();
     cache.addAll(requests);
   },
+
   async deleteOldCache() {
     const cacheNames = await caches.keys();
     cacheNames
@@ -14,7 +15,9 @@ const CacheHelper = {
 
   async revalidateCache(request) {
     const response = await caches.match(request);
+
     if (response) {
+      this._fetchRequest(request);
       return response;
     }
     return this._fetchRequest(request);
@@ -26,9 +29,11 @@ const CacheHelper = {
 
   async _fetchRequest(request) {
     const response = await fetch(request);
+
     if (!response || response.status !== 200) {
       return response;
     }
+
     await this._addCache(request);
     return response;
   },

@@ -25,7 +25,7 @@ const Detail = {
         likeButtonContainer: document.getElementById('likeButtonContainer'),
         restaurant: {
           id: restaurant.id,
-          title: restaurant.name,
+          name: restaurant.name,
           pictureId: restaurant.pictureId,
           address: restaurant.address,
           city: restaurant.city,

@@ -1,4 +1,3 @@
-/* eslint-disable eol-last */
 import runtime from 'serviceworker-webpack-plugin/lib/runtime';
 
 const swRegister = async () => {

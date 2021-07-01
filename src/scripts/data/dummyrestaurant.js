@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import API_ENDPOINT from '../globals/api-endpoint';
 
 class DummyRestaurant {
