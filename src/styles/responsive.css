@@ -55,7 +55,7 @@
 @media screen and (min-width: 768px) {
   .container-restaurant {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 6em auto;
   }
 }
 
@@ -69,8 +69,7 @@
   .container-restaurant {
     max-width: 1200px;
     display: grid;
-    padding: 3em 0;
-    margin: 4.5rem auto;
+    margin: 5.2em auto;
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
   }

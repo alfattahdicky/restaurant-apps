@@ -43,12 +43,13 @@ nav {
   right: 0;
   width: 100%;
   margin: 0 auto;
+  padding-top: 10px;
   color: var(--dark-color);
   z-index: 10;
 }
 
 nav .nav-toggle {
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,14 +62,13 @@ nav .nav-toggle .nav-brand {
 nav .nav-toggle .nav-menu {
   text-decoration: none;
   color: var(--dark-color);
-  display: inline-block;
-  font-size: 2rem;
-  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
   min-width: 44px;
   min-height: 44px;
-  line-height: 44px;
-  font-size: 1.8rem;
   cursor: pointer;
+  background: transparent;
 }
 
 nav .nav-list {
@@ -216,6 +216,7 @@ main {
 
 .post-item .post_rating {
   margin: 0;
+  padding: 10px 0 0;
   font-size: 14px;
   font-weight: 600;
   color: var(--content-color);
@@ -231,10 +232,13 @@ main {
   text-decoration: none;
   font-size: 1.3rem;
   color: #000;
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .post-item .post_description {
-  margin: 0;
+  /* margin: 0; */
   font-size: 1rem;
   line-height: 1.5;
   display: -webkit-box;
