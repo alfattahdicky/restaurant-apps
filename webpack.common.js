@@ -30,20 +30,9 @@ module.exports = {
         test: /\.(svg|png|jpg|gift)$/,
         use: { loader: 'file-loader' },
       },
-      {
-        test: /\.json/i,
-        type: 'javascript/auto',
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-            },
-          },
-        ],
-      },
     ],
   },
+  devtool: 'cheap-module-eval-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/templates/index.html'),
