@@ -41,7 +41,7 @@ Scenario('unlike one restaurant', (I) => {
 
   I.seeElement('.post-item');
   I.seeElement('.post_title a');
-  I.click(locate('.post_title a').first());
+  I.click(locate('.post_title a'));
 
   I.seeElement('#likeButton');
   I.click('#likeButton');

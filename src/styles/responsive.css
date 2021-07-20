@@ -29,6 +29,9 @@
     background-color: transparent;
   }
 
+  .hero-inner .hero_title {
+    font-size: calc(0.5vw + 2rem);
+  }
   /* Main  */
 
   /* Post */

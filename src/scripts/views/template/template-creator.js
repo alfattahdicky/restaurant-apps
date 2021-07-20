@@ -1,12 +1,14 @@
 import CONFIG from '../../globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const createRestaurantItemTemplate = (restaurant) => `
   <article class="post-item">
     <p class="post_city" tabindex="0">${restaurant.city}</p>
     <img
-        src="${CONFIG.BASE_URL_IMAGE + restaurant.pictureId}"
+        data-src="${CONFIG.BASE_URL_IMAGE + restaurant.pictureId}"
         alt="${restaurant.name}"
-        class="post_thumbnail"
+        class="post_thumbnail lazyload"
         loading="lazy"
         tabindex="0"
     />
@@ -20,7 +22,7 @@ const createRestaurantItemTemplate = (restaurant) => `
 
 const createRestaurantDetailTemplate = (restaurant) => `
   <div class="container-image-restaurant">
-    <img src="${CONFIG.BASE_URL_IMAGE + restaurant.pictureId}" alt="${restaurant.name}" class="img-restaurant">
+    <img data-src="${CONFIG.BASE_URL_IMAGE + restaurant.pictureId}" alt="${restaurant.name}" class="img-restaurant lazyload">
   </div>
   <div class="information">
     <h4 class="information-location"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>${restaurant.city}, ${restaurant.address}</h4>
@@ -53,7 +55,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     ${restaurant.customerReviews.map((customerReview) => `
       <div class="container-review">
         <div class="container-img">
-          <img src="./images/person.svg" alt="${customerReview.name}" class="img-review">
+          <img data-src="./icons/person.svg" alt="${customerReview.name}" class="lazyload img-review">
         </div>
         <div class="intro-review">
           <h4 class="name-review">${customerReview.name}</h4>
