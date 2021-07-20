@@ -57,6 +57,9 @@
     max-width: 500px;
     margin: 6em auto;
   }
+  .hero-inner .hero_tagline {
+    font-size: calc(0.4vw + 1.3rem);
+  }
 }
 
 @media screen and (min-width: 992px) {

@@ -1,6 +1,6 @@
 :root {
   --primary-color: #ffc947;
-  --light-color: #f6f5f4;
+  --light-color: hsl(195, 31%, 95%);
   --dark-color: #070707;
   --content-color: #fa974c;
   --content-color-two: #feddbe;

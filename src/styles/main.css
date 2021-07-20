@@ -150,7 +150,6 @@ nav .nav-item a {
 
 .hero-inner .hero_tagline {
   font-size: calc(0.3vw + 1rem);
-  font-weight: 300;
 }
 
 /* Main */
@@ -202,6 +201,7 @@ main {
   text-align: center;
   padding: 5px 12px 5px 10px;
   font-size: 14px;
+  border-top-left-radius: inherit;
 }
 
 .post-item .post_thumbnail {
@@ -259,7 +259,7 @@ main {
 }
 
 .container-restaurant .information {
-  padding: 1rem calc(0.4vw + 1.2rem);
+  padding: 12px calc(0.4vw + 1.2rem) 1rem;
 }
 
 .container-restaurant .information .label-categories {
@@ -283,12 +283,13 @@ main {
 .information .information-location {
   display: flex;
   align-items: center;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .information .information-location i {
   margin-right: 5px;
+  font-size: 1.2rem;
 }
 
 .information-description {
