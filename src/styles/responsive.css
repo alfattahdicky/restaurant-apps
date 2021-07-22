@@ -55,6 +55,12 @@
   }
 }
 
+@media screen and(min-width: 600px) {
+  .hero {
+    background: url("../public/responsive-images/hero-image_2-large.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container-restaurant {
     max-width: 500px;

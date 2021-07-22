@@ -4,14 +4,7 @@ import { createRestaurantItemTemplate } from '../template/template-creator';
 const ListRestaurant = {
   async render() {
     return `
-    <!-- hero -->
     <div class="hero" id="hero">
-      <picture>
-        <source media="(max-width: 600px)" srcset="./images/hero-image_2-small.jpg">
-        <img 
-            src='./images/hero-image_2-large.jpg' 
-            alt=""></img>
-      </picture>
       <div class="hero-inner">
         <h1 class="hero_title" tabindex="0">Katalog Restaurant Terlengkap</h1>
         <p class="hero_tagline" tabindex="0">

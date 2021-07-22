@@ -39,7 +39,6 @@ module.exports = {
       },
     ],
   },
-  devtool: 'cheap-module-eval-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/templates/index.html'),
@@ -50,9 +49,6 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/public/'),
           to: path.resolve(__dirname, 'dist/'),
-          globOptions: {
-            ignore: ['**/images/**'],
-          },
         },
       ],
     }),
