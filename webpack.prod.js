@@ -48,7 +48,10 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
-    // new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: false,
+    }),
     new ImageminWebpackPlugin({
       plugins: [
         ImageminMozjpeg({

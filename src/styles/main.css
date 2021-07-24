@@ -1,23 +1,4 @@
 @import url("config.css");
-@import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.5;
-  overflow-x: hidden;
-  background-color: var(--light-color);
-}
 
 /* Skip Link */
 .skip-link {
@@ -108,6 +89,14 @@ nav .nav-item a {
 /* Hero */
 .hero {
   background: url("../public/responsive-images/hero-image_2-small.jpg");
+  background-image: -webkit-image-set(
+    url("../public/responsive-images/hero-image_2-small.jpg") 1x,
+    url("../public/responsive-images/hero-image_2-large.jpg") 2x,
+  );
+  background-image: image-set(
+    url("../public/responsive-images/hero-image_2-small.jpg") 1x,
+    url("../public/responsive-images/hero-image_2-large.jpg") 2x,
+  );
   background-position: center;
   background-size: cover;
   margin: 5.5em 0 0;

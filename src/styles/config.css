@@ -1,3 +1,5 @@
+@import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
 :root {
   --primary-color: #ffc947;
   --light-color: hsl(195, 31%, 95%);
@@ -18,4 +20,22 @@
     url(../public/fonts/Poppins-Regular.woff2) format("woff2"),
     url(../public/fonts/Poppins-SemiBold.woff2) format("woff2"),
     url(../public/fonts/Poppins-Thin.woff2) format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: var(--light-color);
 }

@@ -1,5 +1,8 @@
 var serviceWorkerOption = {
   "assets": [
+    "/9ee8a9f389af5bf63853b876120833c0.jpg",
+    "/fonts/bootstrap-icons.dfd0ea122577eb61795f178e0347fa2c.woff2",
+    "/fonts/bootstrap-icons.94eeade15e6b7fbed95b18ff32f0c112.woff",
     "/fonts/Poppins-Black.a6d5389876cdbbe232b68bbbeef90f7b.woff2",
     "/fonts/Poppins-Bold.342ef44b55a09976f76742a879c63b90.woff2",
     "/fonts/Poppins-ExtraBold.e99b9449436f8a5979c51d0a126d41ce.woff2",
@@ -10,10 +13,7 @@ var serviceWorkerOption = {
     "/fonts/Poppins-Regular.01534191c3f11f1f1e09f3ee2c554742.woff2",
     "/fonts/Poppins-SemiBold.1d56971745f17a8ca712ca883ad906f5.woff2",
     "/fonts/Poppins-Thin.29e72ddb15d19ede95e424620f3a3d94.woff2",
-    "/fonts/bootstrap-icons.dfd0ea122577eb61795f178e0347fa2c.woff2",
-    "/fonts/bootstrap-icons.94eeade15e6b7fbed95b18ff32f0c112.woff",
     "/a8a8804a5c3542c16c66a9dd45885c19.jpg",
-    "/9ee8a9f389af5bf63853b876120833c0.jpg",
     "/0.bundle.js",
     "/1.bundle.js",
     "/2.bundle.js",
@@ -22,6 +22,11 @@ var serviceWorkerOption = {
     "/favicon-32x32.png",
     "/favicon.ico",
     "/manifest.json",
+    "/icons/icon-192x192.png",
+    "/icons/icon-256x256.png",
+    "/icons/icon-384x384.png",
+    "/icons/icon-512x512.png",
+    "/icons/person.svg",
     "/fonts/Poppins-Black.woff2",
     "/fonts/Poppins-Bold.woff2",
     "/fonts/Poppins-ExtraBold.woff2",
@@ -34,11 +39,6 @@ var serviceWorkerOption = {
     "/fonts/Poppins-Thin.woff2",
     "/responsive-images/hero-image_2-large.jpg",
     "/responsive-images/hero-image_2-small.jpg",
-    "/icons/icon-192x192.png",
-    "/icons/icon-256x256.png",
-    "/icons/icon-384x384.png",
-    "/icons/icon-512x512.png",
-    "/icons/person.svg",
     "/index.html"
   ]
 };
