@@ -58,7 +58,7 @@
 
 @media screen and (min-width: 600px) {
   .hero {
-    background: url("../public/responsive-images/hero-image_2-large.jpg");
+    background-image: url("../public/responsive-images/hero-image_2-large.jpg");
   }
 }
 

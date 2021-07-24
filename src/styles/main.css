@@ -88,17 +88,10 @@ nav .nav-item a {
 
 /* Hero */
 .hero {
-  background: url("../public/responsive-images/hero-image_2-small.jpg");
-  background-image: -webkit-image-set(
-    url("../public/responsive-images/hero-image_2-small.jpg") 1x,
-    url("../public/responsive-images/hero-image_2-large.jpg") 2x,
-  );
-  background-image: image-set(
-    url("../public/responsive-images/hero-image_2-small.jpg") 1x,
-    url("../public/responsive-images/hero-image_2-large.jpg") 2x,
-  );
+  background-image: url("../public/responsive-images/hero-image_2-small.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   margin: 5.5em 0 0;
   min-height: 360px;
   display: flex;
